@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Agriculture Tube logo</title>
+  <desc id="desc">A cream sprout growing from a play button on a forest green rounded square</desc>
+  <rect width="128" height="128" rx="32" fill="#174d35"/>
+  <path d="M47 78V55c0-5 5-8 9-5l29 14c5 2 5 9 0 12L56 90c-4 2-9-1-9-5V78Z" fill="#f8f5e9"/>
+  <path d="M58 49c-1-17 11-28 30-27 1 18-9 29-27 29" fill="#b9d86b"/>
+  <path d="M59 48c7-9 14-14 23-20" fill="none" stroke="#174d35" stroke-width="4" stroke-linecap="round"/>
+  <path d="M57 50c-10-9-20-9-29-5 5 12 15 17 29 13" fill="#e5ad45"/>
+</svg>

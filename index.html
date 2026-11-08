@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#174d35" />
+  <meta name="description" content="Agriculture Tube — practical farming knowledge, inspiring growers, and stories from the soil." />
+  <title>Agriculture Tube — Grow your knowledge</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V10Z"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></symbol>
+    <symbol id="i-playlist" viewBox="0 0 24 24"><path d="M4 6h11M4 11h11M4 16h7M18 12v8m-3-3 3 3 3-3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v17l-6-4-6 4V4Z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2M16 5a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 4v2"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m-5 5 5-5 5 5M5 15v4a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 7h18s-3 0-3-7M10 20h4"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></symbol>
+    <symbol id="i-more" viewBox="0 0 24 24"><circle cx="12" cy="5" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="19" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4C10 3 4 7 4 14a6 6 0 0 0 6 6c7 0 10-7 10-16Z"/><path d="M4 20 15 9"/></symbol>
+    <symbol id="i-thumbs" viewBox="0 0 24 24"><path d="M7 10v10H3V10h4Zm0 9h10a2 2 0 0 0 2-1.6l1.3-7A2 2 0 0 0 18.3 8H14l1-4a2 2 0 0 0-3.8-1L7 10"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 13.5v-3l-2-.7a7 7 0 0 0-.7-1.6l.9-1.9-2.1-2.1-1.9.9a7 7 0 0 0-1.6-.7l-.7-2h-3l-.7 2a7 7 0 0 0-1.6.7l-1.9-.9-2.1 2.1.9 1.9a7 7 0 0 0-.7 1.6l-2 .7v3l2 .7a7 7 0 0 0 .7 1.6l-.9 1.9 2.1 2.1 1.9-.9a7 7 0 0 0 1.6.7l.7 2h3l.7-2a7 7 0 0 0 1.6-.7l1.9.9 2.1-2.1-.9-1.9a7 7 0 0 0 .7-1.6l2-.7Z"/></symbol>
+  </defs></svg>
+
+  <header class="topbar">
+    <div class="brand-area">
+      <button class="icon-button menu-button" id="menuBtn" aria-label="Toggle navigation"><svg><use href="#i-menu"/></svg></button>
+      <a class="brand" href="#" aria-label="Agriculture Tube home"><img src="assets/logo.svg" alt=""/><span>agriculture<span class="brand-light">tube</span></span></a>
+    </div>
+    <div class="search-wrap">
+      <svg class="search-icon"><use href="#i-search"/></svg>
+      <input id="searchInput" type="search" placeholder="Search farming videos, techniques, crops..." aria-label="Search videos" />
+      <kbd>⌘ K</kbd>
+    </div>
+    <div class="top-actions">
+      <button class="upload-button" id="uploadBtn"><svg><use href="#i-upload"/></svg><span>Share a video</span></button>
+      <div class="popover-anchor">
+        <button class="icon-button" id="notificationBtn" aria-label="Notifications"><svg><use href="#i-bell"/></svg><span class="notification-dot"></span></button>
+        <div class="popover notifications" id="notifications" hidden>
+          <div class="popover-title">Notifications <span>2 new</span></div>
+          <div class="notification-item"><span class="mini-avatar avatar-gold">RK</span><p><strong>Rural Knowledge</strong> just shared a new guide to monsoon soil care.<small>18 minutes ago</small></p></div>
+          <div class="notification-item"><span class="mini-avatar avatar-green">GS</span><p>Your saved series <strong>Grow Smart</strong> has a new episode.<small>2 hours ago</small></p></div>
+        </div>
+      </div>
+      <div class="popover-anchor">
+        <button class="profile-button" id="profileBtn" aria-label="Open profile">AK</button>
+        <div class="popover profile-menu" id="profileMenu" hidden>
+          <strong>Arun Kumar</strong><small>arun@farmcommunity.in</small>
+          <button data-nav="library"><svg><use href="#i-bookmark"/></svg>My library</button>
+          <button><svg><use href="#i-settings"/></svg>Settings</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <nav>
+      <p class="nav-label">EXPLORE</p>
+      <button class="nav-item active" data-nav="home"><svg><use href="#i-home"/></svg><span>Home</span></button>
+      <button class="nav-item" data-nav="discover"><svg><use href="#i-compass"/></svg><span>Discover</span></button>
+      <button class="nav-item" data-nav="following"><svg><use href="#i-users"/></svg><span>Following</span><span class="nav-count">8</span></button>
+      <p class="nav-label second">YOUR SPACE</p>
+      <button class="nav-item" data-nav="library"><svg><use href="#i-bookmark"/></svg><span>Saved videos</span></button>
+      <button class="nav-item" data-nav="history"><svg><use href="#i-clock"/></svg><span>Watch history</span></button>
+      <button class="nav-item" data-nav="playlists"><svg><use href="#i-playlist"/></svg><span>My playlists</span></button>
+    </nav>
+    <div class="sidebar-channels">
+      <p class="nav-label">YOUR CHANNELS <span>+</span></p>
+      <button class="channel-link" data-channel="Rural Knowledge"><span class="mini-avatar avatar-gold">RK</span>Rural Knowledge<span class="live-dot"></span></button>
+      <button class="channel-link" data-channel="The Soil Story"><span class="mini-avatar avatar-soil">SS</span>The Soil Story</button>
+      <button class="channel-link" data-channel="Green Acre"><span class="mini-avatar avatar-green">GA</span>Green Acre</button>
+    </div>
+    <div class="sidebar-quote"><svg><use href="#i-leaf"/></svg><p>“To forget how to dig the earth is to forget ourselves.”</p><span>— Mahatma Gandhi</span></div>
+    <footer>About &nbsp; Community &nbsp; Guidelines<br/>© 2026 Agriculture Tube</footer>
+  </aside>
+
+  <main class="main" id="main">
+    <section class="welcome-row">
+      <div><p class="eyebrow">YOUR DAILY DOSE OF GREEN</p><h1 id="pageTitle">Good things are growing.</h1><p id="pageSubtitle">Practical wisdom from fields, farms, and people who feed the world.</p></div>
+      <div class="weather"><svg><use href="#i-sun"/></svg><div><strong>28°C</strong><span>Chennai, TN</span></div><span class="weather-divider"></span><p>Good day to<br/><strong>get growing</strong></p></div>
+    </section>
+
+    <section id="homeContent">
+      <div class="hero-layout">
+        <article class="hero-card" data-video="0">
+          <img src="assets/images/rice-terraces.jpg" alt="Lush terraced rice fields" />
+          <div class="hero-shade"></div>
+          <span class="hero-badge"><span></span> FEATURED STORY</span>
+          <div class="hero-content"><p>FIELD TO FUTURE · EPISODE 04</p><h2>Where every terrace<br/>tells a story.</h2><span>Meet the farmers keeping an ancient rice-growing tradition alive.</span><button class="watch-button"><svg><use href="#i-play"/></svg>Watch story <small>12:48</small></button></div>
+        </article>
+        <aside class="field-note">
+          <div class="note-top"><span class="note-icon"><svg><use href="#i-leaf"/></svg></span><span>THIS WEEK’S FIELD NOTE</span><span class="note-number">№ 042</span></div>
+          <h3>Healthy soil.<br/>Healthier future.</h3><p>Five simple, natural ways to bring life back to your soil—without spending a rupee.</p>
+          <div class="note-list"><span><b>01</b> Feed it with compost</span><span><b>02</b> Keep the ground covered</span><span><b>03</b> Rotate your crops</span></div>
+          <button class="text-link" id="readNote">Read the field note <svg><use href="#i-chevron"/></svg></button>
+          <div class="note-stamp">GROW<br/><strong>WITH</strong><br/>PURPOSE</div>
+        </aside>
+      </div>
+
+      <div class="section-heading"><div><h2>Fresh from the field</h2><p>New stories and useful ideas, picked for you</p></div><button class="view-all" data-nav="discover">View all <svg><use href="#i-chevron"/></svg></button></div>
+      <div class="category-scroll" id="categories"><button class="chip active" data-category="All">All</button><button class="chip" data-category="Organic">Organic farming</button><button class="chip" data-category="Technology">Agri-tech</button><button class="chip" data-category="Crops">Crop care</button><button class="chip" data-category="Livestock">Livestock</button><button class="chip" data-category="Business">Farm business</button><button class="chip" data-category="Stories">Farmer stories</button></div>
+      <div class="video-grid" id="videoGrid"></div>
+      <div class="empty-state" id="emptyState" hidden><span>🌱</span><h3>No videos found</h3><p>Try a different search or explore another category.</p><button class="primary-button" id="resetSearch">Show all videos</button></div>
+    </section>
+
+    <section class="collection-banner"><div><span class="collection-icon">▶</span><p><span>CURATED COLLECTION</span><strong>From seed to harvest: the complete guide</strong></p></div><button id="collectionBtn">Explore 8 videos <svg><use href="#i-chevron"/></svg></button></section>
+  </main>
+
+  <div class="modal-backdrop" id="watchModal" hidden>
+    <section class="watch-modal" role="dialog" aria-modal="true" aria-label="Video player">
+      <button class="modal-close" data-close="watchModal"><svg><use href="#i-close"/></svg></button>
+      <div class="player" id="player"><img id="playerImage" src="" alt=""/><div class="player-overlay"></div><button class="big-play" id="bigPlay"><svg><use href="#i-play"/></svg></button><div class="player-controls"><button id="playToggle"><svg><use href="#i-play"/></svg></button><span id="currentTime">0:00</span><input id="progress" type="range" min="0" max="100" value="0" aria-label="Video progress"/><span id="duration">12:48</span><span class="hd">HD</span></div></div>
+      <div class="watch-details"><span class="watch-category" id="watchCategory"></span><h2 id="watchTitle"></h2><div class="watch-meta" id="watchMeta"></div><div class="channel-row"><div class="channel-identity"><span class="mini-avatar avatar-green" id="watchAvatar"></span><p><strong id="watchChannel"></strong><small>128K subscribers</small></p></div><button class="subscribe-button" id="subscribeBtn">Subscribe</button><div class="watch-actions"><button id="likeBtn"><svg><use href="#i-thumbs"/></svg><span>Like</span></button><button id="saveBtn"><svg><use href="#i-bookmark"/></svg><span>Save</span></button><button id="shareBtn"><svg><use href="#i-share"/></svg><span>Share</span></button></div></div><p class="video-description" id="watchDescription"></p></div>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="uploadModal" hidden><section class="small-modal" role="dialog" aria-modal="true"><button class="modal-close" data-close="uploadModal"><svg><use href="#i-close"/></svg></button><span class="modal-leaf"><svg><use href="#i-upload"/></svg></span><h2>Share what you’re growing</h2><p>Your experience can help another farmer. Add a title and choose a video to get started.</p><label>Video title<input id="uploadTitle" placeholder="e.g. My natural composting method"/></label><label class="file-drop"><input id="fileInput" type="file" accept="video/*"/><svg><use href="#i-upload"/></svg><strong id="fileLabel">Choose a video file</strong><span>MP4, WebM or MOV · up to 2 GB</span></label><button class="primary-button full" id="publishBtn">Publish video</button></section></div>
+
+  <div class="modal-backdrop" id="noteModal" hidden><section class="small-modal note-modal" role="dialog" aria-modal="true"><button class="modal-close" data-close="noteModal"><svg><use href="#i-close"/></svg></button><span class="eyebrow">FIELD NOTE № 042</span><h2>Bring your soil back to life</h2><p>Healthy soil is a living ecosystem. Start small: add mature compost, protect the surface with leaf mulch, rotate plant families each season, grow legumes to fix nitrogen, and avoid walking on wet beds.</p><div class="note-callout">The goal isn’t just to feed the plant—it’s to feed the soil that feeds it.</div><button class="primary-button full" data-close="noteModal">Got it, let’s grow</button></section></div>
+
+  <div class="toast" id="toast"><svg><use href="#i-check"/></svg><span></span></div>
+  <script src="script.js"></script>
+</body>
+</html>

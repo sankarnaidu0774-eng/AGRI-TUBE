@@ -1,0 +1,12 @@
+.vscode
+*.psd
+node_modules
+.env
+.env.local
+.env.*.local
+!.env.example
+package-lock.json
+_TRIALS
+_WATCH
+_READY
+TODO
